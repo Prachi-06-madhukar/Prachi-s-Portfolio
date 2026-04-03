@@ -4,6 +4,7 @@ import Dresscue from "../assets/Dresscue.jpeg";
 import Frame from "../assets/Frame.png";
 import Banc from "../assets/Banc.jpeg";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const StackingScrollShowcase = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -283,21 +284,38 @@ I led the end-to-end design process—from user research and journey mapping to 
                         ))}
                       </p>
                     </div>
-                    <a
-                      href={getButtonLinks(section.id)}
-                      className="cursor-none"
-                      target="_blank"
-                    >
-                      <button
-                        className=" border-black border-1 rounded-xl px-2 py-1 text-[15px] cursor-none"
-                        style={{
-                          color: getButtonTextColor(section.id),
-                          borderColor: getButtonBorderColor(section.id),
-                        }}
+                    {getButtonLinks(section.id).startsWith("/") ? (
+                      <Link
+                        to={getButtonLinks(section.id)}
+                        className="cursor-none"
                       >
-                        View Project
-                      </button>
-                    </a>
+                        <button
+                          className=" border-black border-1 rounded-xl px-2 py-1 text-[15px] cursor-none"
+                          style={{
+                            color: getButtonTextColor(section.id),
+                            borderColor: getButtonBorderColor(section.id),
+                          }}
+                        >
+                          View Project
+                        </button>
+                      </Link>
+                    ) : (
+                      <a
+                        href={getButtonLinks(section.id)}
+                        className="cursor-none"
+                        target="_blank"
+                      >
+                        <button
+                          className=" border-black border-1 rounded-xl px-2 py-1 text-[15px] cursor-none"
+                          style={{
+                            color: getButtonTextColor(section.id),
+                            borderColor: getButtonBorderColor(section.id),
+                          }}
+                        >
+                          View Project
+                        </button>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
