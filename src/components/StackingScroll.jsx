@@ -1,11 +1,7 @@
 "use client";
 
 import Dresscue from "../assets/Dresscue.jpeg";
-import Cms from "../assets/Cms.jpeg";
 import Frame from "../assets/Frame.png";
-import Bank from "../assets/OneBanc.jpeg";
-import Faena from "../assets/Faena.jpg";
-import Roen from "../assets/Roen.jpeg";
 import Banc from "../assets/Banc.jpeg";
 import React, { useState, useEffect } from "react";
 
@@ -56,15 +52,30 @@ The project involved creating a scalable architecture that can handle high traff
     },
     {
       id: 4,
-      category: "UI/UX Case study",
-      title: "ROEN",
-      subtitle: "Your Skin, Your Story",
-      description: `As part of a branding and web design initiative for HAE Enterprises, I redesigned the digital experience for Roén, a luxury makeup brand focused on clean, effective beauty. The goal was to elevate the online shopping experience with a user-centric and emotionally engaging interface. I crafted a clean landing page, intuitive product pages, and an interactive before/after mascara slider that showcased product effectiveness while maintaining brand elegance. The outcome was a seamless, responsive experience that blended storytelling with commerce.`,
+      category: "Website Design Project",
+      title: "VIXII",
+      subtitle: "Beautifully Imperfect",
+      description: `Dresscue is a personal wardrobe styling app that helps users overcome the daily what to wear dilemma. It generates outfit suggestions based on the user's existing wardrobe, personal preferences, and current fashion trends. The app blends personalization with trend-awareness and includes a social feature where users can share their outfits and get inspired by others.
+I led the end-to-end design process—from user research and journey mapping to wireframes, UI design, and prototyping—ensuring a seamless, intuitive, and visually engaging experience.`,
       toolsUsed: "Figma · Illustrator · Photoshop",
-      skills: `User Flow Design · Wireframing · Visual Design · E-commerce UX
-Responsive Design · Microinteractions · UX Writing · UI Animation
-Interaction Design · Accessibility · Brand Storytelling`,
-      img: Roen,
+      skills: `· User Research · Journey Mapping · Wireframing
+· Visual Design · Design Systems · UX Writing · Mobile UI`,
+      img: "/VIXII (1).png",
+      bgImage: true,
+      link: "/vixii",
+    },
+    {
+      id: 5,
+      category: "Website Design Project",
+      title: "Blitz Trip",
+      subtitle: "Website Design Project",
+      description: `Dresscue is a personal wardrobe styling app that helps users overcome the daily what to wear dilemma. It generates outfit suggestions based on the user's existing wardrobe, personal preferences, and current fashion trends. The app blends personalization with trend-awareness and includes a social feature where users can share their outfits and get inspired by others.
+I led the end-to-end design process—from user research and journey mapping to wireframes, UI design, and prototyping—ensuring a seamless, intuitive, and visually engaging experience.`,
+      toolsUsed: "Figma · Illustrator · Photoshop",
+      skills: `· User Research · Journey Mapping · Wireframing
+· Visual Design · Design Systems · UX Writing · Mobile UI`,
+      img: "/Blitz trip.png",
+      bgImage: true,
     },
   ];
 
@@ -92,7 +103,8 @@ Interaction Design · Accessibility · Brand Storytelling`,
       1: "#f9f8f8",
       2: "#5e5e5e",
       3: "white",
-      4: "black",
+      4: "#c8d8e8",
+      5: "#4a4a4a",
     };
 
     return colors[id] || "#f9f8f8";
@@ -103,7 +115,8 @@ Interaction Design · Accessibility · Brand Storytelling`,
       1: "#f9f8f8",
       2: "black",
       3: "black",
-      4: "black",
+      4: "#c8d8e8",
+      5: "#4a4a4a",
     };
 
     return colors[id] || "#f9f8f8";
@@ -114,7 +127,8 @@ Interaction Design · Accessibility · Brand Storytelling`,
       1: "white",
       2: "black",
       3: "white",
-      4: "white",
+      4: "#f0c8c8",
+      5: "white",
     };
     return colors[id] || "#f9f8f8";
   };
@@ -125,6 +139,7 @@ Interaction Design · Accessibility · Brand Storytelling`,
       2: "white",
       3: "black",
       4: "black",
+      5: "black",
     };
     return colors[id] || "#f9f8f8";
   };
@@ -135,6 +150,7 @@ Interaction Design · Accessibility · Brand Storytelling`,
       2: "white",
       3: "black",
       4: "black",
+      5: "black",
     };
     return colors[id] || "#f9f8f8";
   };
@@ -145,18 +161,20 @@ Interaction Design · Accessibility · Brand Storytelling`,
       2: "white",
       3: "black",
       4: "black",
+      5: "black",
     };
     return colors[id] || "#f9f8f8";
   };
 
   const getButtonLinks = (id) => {
-    const colors = {
+    const links = {
       1: "https://www.behance.net/gallery/228510137/Dresscue-smart-wardrobe-case-study",
       2: "https://www.behance.net/gallery/229794877/Fintech-App-Design-for-OneBanc-Technologies-pvt-ltd",
       3: "https://www.behance.net/gallery/227658907/UI-redesign-project-College-Management-stystem",
-      4: "https://www.behance.net/gallery/228453481/ROEN-Web-design",
+      4: "/vixii",
+      5: "#",
     };
-    return colors[id] || "#";
+    return links[id] || "#";
   };
 
   return (
@@ -175,13 +193,23 @@ Interaction Design · Accessibility · Brand Storytelling`,
             <div
               className=" w-full flex flex-col lg:flex-row items-center rounded-[27px] overflow-hidden relative border-2 "
               style={{
-                backgroundColor: getSectionBgColor(section.id),
+                backgroundColor: section.bgImage ? "transparent" : getSectionBgColor(section.id),
                 borderColor: getSectionBorderColor(section.id),
+                minHeight: "600px",
               }}
             >
+              {/* Background Image (for VIXII & Blitz Trip) */}
+              {section.bgImage && (
+                <img
+                  src={section.img}
+                  alt={`${section.title} background`}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              )}
+
               {/* Left Card Section */}
               <div
-                className="bg-white rounded-[57px] shadow px-8 pb-12 py-8 max-w-lg w-full ml-6 my-6 "
+                className={`bg-white rounded-[57px] shadow px-8 pb-12 py-8 max-w-lg w-full ml-6 my-6 ${section.bgImage ? "relative z-10" : ""}`}
                 style={{ backgroundColor: getDescriptionBgColor(section.id) }}
               >
                 <div className="space-y-6">
@@ -274,16 +302,18 @@ Interaction Design · Accessibility · Brand Storytelling`,
                 </div>
               </div>
 
-              {/* Right Image Section */}
-              <div className="flex-1 max-w-4xl">
-                <img
-                  className=" rounded-lg "
-                  alt={`${section.title} showcase`}
-                  src={section.img}
-                  height={10000}
-                  width={22000}
-                />
-              </div>
+              {/* Right Image Section (for non-bg cards) */}
+              {!section.bgImage && (
+                <div className="flex-1 max-w-4xl">
+                  <img
+                    className=" rounded-lg "
+                    alt={`${section.title} showcase`}
+                    src={section.img}
+                    height={10000}
+                    width={22000}
+                  />
+                </div>
+              )}
             </div>
           </div>
         ))}
