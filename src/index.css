@@ -13,6 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MyFontMed';
   src: url('./assets/fonts/sfproMed.otf') format('opentype');
@@ -27,12 +28,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Flapjack';
+  src: url('/fonts/flapjack.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.flapjack-font {
+  font-family: 'Flapjack';
+}
+
 .newsreader-font-sleek {
   font-family: "Newsreader", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
 .newsreader-font {
   font-family: "Newsreader", serif;
   font-optical-sizing: auto;

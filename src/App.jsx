@@ -65,7 +65,7 @@ function App() {
               onMouseLeave={() => setIsHoveringBlack(false)}>
       <StackingScrollShowcase/>
     </div>
-    <div className='h-dvh width-full bg-white ' id='contact'>
+    <div id='contact'>
       <Contact/>
     </div>
 

@@ -77,6 +77,7 @@ I led the end-to-end design process—from user research and journey mapping to 
 · Visual Design · Design Systems · UX Writing · Mobile UI`,
       img: "/Blitz trip.png",
       bgImage: true,
+      link: "/blitzescape",
     },
   ];
 
@@ -173,15 +174,15 @@ I led the end-to-end design process—from user research and journey mapping to 
       2: "https://www.behance.net/gallery/229794877/Fintech-App-Design-for-OneBanc-Technologies-pvt-ltd",
       3: "https://www.behance.net/gallery/227658907/UI-redesign-project-College-Management-stystem",
       4: "/vixii",
-      5: "#",
+      5: "/blitzescape",
     };
     return links[id] || "#";
   };
 
   return (
-    <div className="min-h-screen bg-black pb-40">
-      <div className="sticky top-0 left-0 w-full z-50 bg-black px-15 pt-10 pb-10">
-        <h1 className="text-white text-7xl pl-10 mb-30 font-myfontMed">Work</h1>
+    <div className="min-h-screen bg-white pb-40">
+      <div className="sticky top-0 left-0 w-full z-50 bg-white px-15 pt-10 pb-10">
+        <h1 className="text-black text-7xl pl-10 mb-30 font-myfontMed">Work</h1>
       </div>
 
       <div className="px-15">
