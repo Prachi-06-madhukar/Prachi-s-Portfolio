@@ -179,15 +179,10 @@ const Vixii = () => {
                 </h2>
               </div>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                VIXII's website was clearly{" "}
-                <strong>
-                  unreflective of it's current in-person experience
-                </strong>
-                , but in order to truly understand the issues of the website{" "}
-                <strong>
-                  we took to interviewing current and prospective customers to
-                  understand the outstanding issues
-                </strong>
+                VIXII's website did not fully reflect its in-person experience.
+                To identify the gaps, we analyzed customer and user feedback
+                from the previous launch, which helped uncover key issues and
+                areas for improvement.
               </p>
             </div>
 
@@ -251,9 +246,8 @@ const Vixii = () => {
                 Approach.
               </h2>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                Before tackling a whole redesign of web experience, I worked on
-                creating a framework of how we would tackle this project. We
-                would be working from the inside out.
+                To address the identified gaps and improve the overall
+                experience, we structured our approach across three key areas
               </p>
             </div>
 
@@ -268,9 +262,9 @@ const Vixii = () => {
                   Web & Navigation Content
                 </h3>
                 <p className="text-[13px] leading-relaxed text-gray-600">
-                  In order to create anything high-fidelity, we needed to start
-                  at the roots and work our way up. Therefore, our first step was
-                  to tackle the <strong>website's current structure</strong>.
+                  We focused on building a clear and intuitive site structure by
+                  refining the sitemap, ensuring users can navigate seamlessly
+                  and find information with ease.
                 </p>
               </div>
               <div>
@@ -283,9 +277,10 @@ const Vixii = () => {
                   E-Commerce Experience
                 </h3>
                 <p className="text-[13px] leading-relaxed text-gray-600">
-                  We then would separate the user experience within the{" "}
-                  <strong>online ordering</strong> section to better reflect any
-                  changes made from the past step.
+                  We analyzed the existing user journey alongside competitor
+                  platforms to identify opportunities for improvement, enhancing
+                  usability, product discovery, and the overall shopping
+                  experience.
                 </p>
               </div>
               <div>
@@ -298,9 +293,9 @@ const Vixii = () => {
                   Visual Branding
                 </h3>
                 <p className="text-[13px] leading-relaxed text-gray-600">
-                  This step would focus on layering Superbloom's{" "}
-                  <strong>colorful branding and visual aesthetic</strong> with
-                  our new structured web architecture.
+                  We revisited the brand's visual identity to create a cohesive
+                  and consistent look, aligning the digital presence with
+                  VIXII's in-person experience.
                 </p>
               </div>
             </div>
@@ -323,10 +318,8 @@ const Vixii = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-8">
               <h3 className="text-base font-semibold shrink-0">Sitemap</h3>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                We sequenced all participant's groupings and compared each to{" "}
-                <strong>
-                  create an ideal layout of Superbloom's new sitemap.
-                </strong>
+                Developed a clear and structured sitemap to improve navigation
+                and information flow.
               </p>
             </div>
 
@@ -396,9 +389,8 @@ const Vixii = () => {
                 Competitive Analysis
               </h3>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                <strong>We analyzed numerous small coffee shops</strong> around
-                our home towns to understand what kind of design layouts
-                customers feel most comfortable interacting with.
+                Analyzed competitor platforms within the UK market to identify
+                trends, gaps, and opportunities for differentiation.
               </p>
             </div>
 
@@ -429,10 +421,8 @@ const Vixii = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-8">
               <h3 className="text-base font-semibold shrink-0">Mood-boards</h3>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                Revitalizing Superbloom's <strong>visual identity</strong> was
-                an extremely fun process. To reflect the{" "}
-                <strong>eccentric and expressive</strong> nature of Superbloom's
-                district, Starland, we knew we had to go
+                Developed a moodboard to establish a cohesive visual language
+                and design inspiration.
               </p>
             </div>
 
@@ -448,10 +438,9 @@ const Vixii = () => {
                 Design System
               </h3>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                This was my first project where I was encouraged to collect my UI
-                elements as visual system. However, doing so enabled much clearer
-                communication and design congruency between me and my non-design
-                team.
+                Designed a system that combines contemporary trends with
+                Indian-inspired elements, aligning with both the audience and
+                product origin.
               </p>
             </div>
 
@@ -469,9 +458,8 @@ const Vixii = () => {
                 Mid-Fis
               </h2>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                We created four layouts, two each for homepage and e-commerce
-                sections. This would allow us to later test and validate designs
-                with users.
+                Developed wireframes to map out user journeys and define the
+                core structure of the experience.
               </p>
             </div>
 
@@ -489,8 +477,9 @@ const Vixii = () => {
                 Final Designs
               </h2>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                From our final A/B testing, we wrapped down to our final
-                homepage and e-commerce screen.
+                The final designs were crafted to ensure a balance between
+                functionality and visual appeal, creating a consistent and
+                engaging experience.
               </p>
             </div>
 
@@ -527,8 +516,8 @@ const Vixii = () => {
                 </h2>
               </div>
               <p className="text-[13px] leading-relaxed text-gray-700 md:max-w-[55%]">
-                Our final product was brought to customers for review and the
-                result was an overwhelming positive response!
+                final product was brought to customers for review. result was
+                an overwhelming positive response!
               </p>
             </div>
 <div className="space-y-8">
@@ -541,6 +530,18 @@ const Vixii = () => {
            
           </div>
         </main>
+      </div>
+
+      {/* ==================== LIVE LINK ==================== */}
+      <div className="w-full flex flex-col items-center justify-center px-5 md:px-10 pb-10 md:pb-14">
+        <p className="text-sm md:text-base tracking-[0.15em] uppercase font-semibold text-center mb-8 md:mb-10">
+          You can have a look at the website it's live @VIXIIWORLD.CO.UK
+        </p>
+        <img
+          src="/YewFTORitJK7jsMUyOYYoBNtCU.jpg.png"
+          alt="VIXII Tigers"
+          className="w-24 md:w-32 mx-auto"
+        />
       </div>
 
       {/* ==================== OTHER PROJECTS ==================== */}
