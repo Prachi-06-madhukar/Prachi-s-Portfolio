@@ -3,8 +3,13 @@ import Dialog from "./Dialog";
 import DarkCursor from "./DarkCursor";
 function DottedCursor({ isHovering, isHoveringBlack }) {
   const [mousePos, setMousePos] = useState({ x: 1000, y: 1000 });
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    const isTouch = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+    setIsTouchDevice(isTouch);
+    if (isTouch) return;
+
     const handleMouseMove = (e) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
@@ -12,12 +17,13 @@ function DottedCursor({ isHovering, isHoveringBlack }) {
     document.addEventListener("mousemove", handleMouseMove);
     document.body.style.cursor = "none";
 
-    // Cleanup
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
       document.body.style.cursor = "auto";
     };
   }, []);
+
+  if (isTouchDevice) return null;
 
   return (
     <div

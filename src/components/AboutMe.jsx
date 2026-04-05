@@ -224,9 +224,9 @@ function AboutMe() {
     "text-black transition-all duration-700";
 
   return (
-    <div className="w-full bg-white pt-24 pb-24 px-8 md:px-16 lg:px-24">
-      <div className="mb-12">
-        <h1 className="text-black font-myfontMed text-5xl mb-6 uppercase">
+    <div className="w-full bg-white pt-12 sm:pt-16 md:pt-24 pb-12 sm:pb-16 md:pb-24 px-5 sm:px-8 md:px-16 lg:px-24">
+      <div className="mb-8 md:mb-12">
+        <h1 className="text-black font-myfontMed text-3xl sm:text-4xl md:text-5xl mb-4 md:mb-6 uppercase">
           I AM
         </h1>
 
@@ -244,10 +244,10 @@ function AboutMe() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 text-black">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 md:gap-10 text-black">
         {/* Column 1 */}
         <div className="max-w-md">
-          <p className="text-[18px] leading-[1.28] font-myfontText">
+          <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.4] sm:leading-[1.28] font-myfontText">
             <span className={strikeClass}>Hi, I’m </span>
             <span className={keywordClass}>Prachi</span>
             <span className={strikeClass}> — a </span>
@@ -277,7 +277,7 @@ function AboutMe() {
 
         {/* Column 2 */}
         <div className="max-w-md xl:mt-28">
-          <p className="text-[18px] leading-[1.28] font-myfontText">
+          <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.4] sm:leading-[1.28] font-myfontText">
             <span className={strikeClass}>I have a strong </span>
             <span className={keywordClass}>eye for detail</span>
             <span className={strikeClass}>
@@ -298,7 +298,7 @@ function AboutMe() {
 
         {/* Column 3 */}
         <div className="max-w-md xl:mt-48">
-          <p className="text-[18px] leading-[1.28] font-myfontText">
+          <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.4] sm:leading-[1.28] font-myfontText">
             <span className={strikeClass}>
               With a background in fashion, I also bring a strong{" "}
             </span>

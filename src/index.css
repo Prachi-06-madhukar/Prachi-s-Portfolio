@@ -52,3 +52,9 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@media (pointer: coarse) {
+  .cursor-none {
+    cursor: auto !important;
+  }
+}
