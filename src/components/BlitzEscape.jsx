@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import Navbar from "./Navbar";
 import Dresscue from "../assets/Dresscue.jpeg";
 import Banc from "../assets/Banc.jpeg";
 import Roen from "../assets/Roen.jpeg";
@@ -49,6 +50,11 @@ const BlitzEscape = () => {
 
   return (
     <div className="bg-white min-h-screen font-myfontText">
+      {/* Navbar */}
+      <div className="bg-white pt-6 pb-4">
+        <Navbar />
+      </div>
+
       {/* Hero Section */}
       <div className="w-full">
         <img
