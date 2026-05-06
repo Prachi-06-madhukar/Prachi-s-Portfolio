@@ -33,7 +33,7 @@ function Contact() {
           </a>
         </div>
         <a
-          href="https://www.behance.net/prachimadhukar"
+          href="https://drive.google.com/file/d/1tuzuW53a-Q3f9fJGDWe9KTa7DW9Qa8Bk/view"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase text-[#8b2020] hover:text-[#6b1515] transition-colors underline underline-offset-4"

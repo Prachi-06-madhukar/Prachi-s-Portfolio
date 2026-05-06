@@ -48,7 +48,7 @@ function Navbar() {
               </span>
             )
           )}
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cursor-none text-black">
+          <a href="https://drive.google.com/file/d/1tuzuW53a-Q3f9fJGDWe9KTa7DW9Qa8Bk/view" target="_blank" rel="noopener noreferrer" className="cursor-none text-black">
             Resume
           </a>
         </div>
@@ -86,7 +86,7 @@ function Navbar() {
               </span>
             )
           )}
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cursor-none text-black">
+          <a href="https://drive.google.com/file/d/1tuzuW53a-Q3f9fJGDWe9KTa7DW9Qa8Bk/view" target="_blank" rel="noopener noreferrer" className="cursor-none text-black">
             Resume
           </a>
         </div>
