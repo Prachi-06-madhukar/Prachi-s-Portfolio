@@ -230,18 +230,14 @@ function AboutMe() {
           I AM
         </h1>
 
-        <button
-          onClick={() => setIsToggled(!isToggled)}
-          className={`relative inline-flex h-10 w-20 items-center rounded-full transition-colors ${
-            isToggled ? "bg-[#cf8b01]" : "bg-[#cfcfcf]"
-          }`}
-        >
-          <span
-            className={`inline-block h-7 w-7 transform rounded-full bg-white shadow-md transition-transform ${
-              isToggled ? "translate-x-11" : "translate-x-1"
-            }`}
+        <label className="switch">
+          <input
+            type="checkbox"
+            checked={isToggled}
+            onChange={() => setIsToggled(!isToggled)}
           />
-        </button>
+          <span className="slider"></span>
+        </label>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 md:gap-10 text-black">
