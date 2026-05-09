@@ -41,8 +41,8 @@ export default function SplashScreen({ onComplete }) {
       }`}
       onTransitionEnd={handleTransitionEnd}
     >
-      <div className="text-center max-w-2xl px-8">
-        <blockquote className="text-2xl md:text-3xl font-medium text-black mb-8 italic leading-relaxed">
+      <div className="text-center px-8">
+        <blockquote className="flapjack-font whitespace-nowrap text-xl sm:text-2xl md:text-3xl font-medium text-black mb-8 italic leading-relaxed">
           "The only way to do great work is to love what you do."
         </blockquote>
         <cite className="text-lg text-gray-600 mb-12 block">— Steve Jobs</cite>
@@ -50,7 +50,7 @@ export default function SplashScreen({ onComplete }) {
         {/* Loading bar container */}
         <div className="w-80 max-w-full h-1 bg-gray-200 rounded-full mx-auto overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-[#cf8b01] to-[#7d520d] rounded-full transition-all duration-100 ease-out"
+            className="h-full bg-gradient-to-r from-[#f98dce] to-[#f168d1] rounded-full transition-all duration-100 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>
